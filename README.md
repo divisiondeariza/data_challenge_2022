@@ -38,6 +38,7 @@ Endava data team designed this challenge to get or increase the knowledge in som
 Using the dataset provided in the Kaggle link below, model a Datawarehouse that could answer the questions in Dashboard for sales management section below:
 
 Optional: use an ETL (e.g., Talend) for the data modelling purpose
+
 https://www.kaggle.com/olistbr/brazilian-ecommerce#olist_orders_dataset.csv
 
 The dataset is a test dataset provided by Olist Store, an ecommerce store.
