@@ -2,7 +2,7 @@
 # Data Challenge 2022: Data Engineer - Data Scientist - Data Analyst
 # Data Challenge – New Joiners
 
-#Description
+# Description
 
 Every new Data Engineer / Science / Analyst hired at Endava has the chance to go through the “Data Challenge”; where they can learn about quality standards, methodologies, and tools that they can user or apply in the future projects.
 
@@ -61,7 +61,7 @@ o	Which categories are most sold in quantity?
 o	What is the payment method distribution on number of orders and order value?
 o	What is the product and freight value by date? – separate view
 
-Suggested KPI: 
+# Suggested KPI: 
 •	# Total Orders, Total Sales ($)
 •	Top categories by price average
 •	Top cities by price average
@@ -95,7 +95,7 @@ Plot the dashboard on Python visualization tools: matplotlib, seaborn
 
 Explain and show the process consistently.
 
-STEP 3: DASHBOARD DEVELOPMENT
+# STEP 3: DASHBOARD DEVELOPMENT
 
 Analyze the information to answer the questions related to the dashboard from the dataset, you can do it in any of these 3 ways:
  
@@ -169,7 +169,7 @@ https://public.tableau.com/app/profile/marien.abeli/viz/Olist_16207865690910/Sto
 # General Considerations
 
 # GIT
-	Use a proper git branching strategy, you will be provided with bitbucket credentials to develop this challenge or use a personal git account.
+•	Use a proper git branching strategy, you will be provided with bitbucket credentials to develop this challenge or use a personal git account.
 
 
 # Notes (Python)
