@@ -13,9 +13,13 @@ Endava data team designed this challenge to get or increase your knowledge in so
 ## General Requirements 
 
 •	Follow code best practices.
+
 •	Follow cloud development best practices.
+
 •	Follow the minimum Web Content Accessibility Guidelines.
+
 •	All back-end services must be deployed on AWS / Azure / GCP (Personal Accounts, could be complete with free tier but you can go out of it if you want).
+
 •	All the code must be in a repository that judges can access.
 
 
@@ -27,24 +31,37 @@ After completing your challenge, you might be invited to present it to the data 
 
 # Data Challenge
 
-Endava data team designed this challenge to get or increase your knowledge in some specific areas, included but not limited to databases, data modelling, date warehouse and SQL topics; Data Acquisition, Data Transformation, ETL, Data Clean, Databases Design, Data Services and Deployment techniques on the cloud.
+Endava data team designed this challenge to get or increase the knowledge in some specific areas, included but not limited to databases, data modelling, date warehouse and SQL topics; Data Acquisition, Data Transformation, ETL, Data Clean, Databases Design, Data Services and Deployment techniques on the cloud.
 
 # Data modelling
 
 Using the dataset provided in the Kaggle link below, model a Datawarehouse that could answer the questions in Dashboard for sales management section below:
+
 Optional: use an ETL (e.g., Talend) for the data modelling purpose
 https://www.kaggle.com/olistbr/brazilian-ecommerce#olist_orders_dataset.csv
+
 The dataset is a test dataset provided by Olist Store, an ecommerce store.
+
 The dataset contains:
+
 •	100 k orders
-•	order view from multiple dimensions: 
-o	order status
-o	price
-o	payment
-o	customer location
-o	product attributes
-o	reviews written by customer
+
+•	order view from multiple dimensions
+
+•	order status
+
+•	price
+
+•	payment
+
+•	customer location
+
+•	product attributes
+
+•	reviews written by customer
+
 •	geolocation dataset that relates Brazilian zip codes to lat/lng coordinates
+
 •	an order has one or many order items
 
 -------
@@ -102,6 +119,7 @@ Hint: Use a Geo Json technology / Parquet files to show the Geographical / Visua
 ## STEP 1: DATASET
 
 Develop a Case study, explain and describe the data. Store the information from the given dataset on a Database (use any RDMS you are familiar with) and use Data frame (a dataset). Review the dataset, make data preparation, clean (if apply) and make an Entity Relationship Diagram.
+
 Use Python 3 and Python libraries and/or any RDBMS to make your ER diagram.
 
 ## STEP 2: ANALYSIS
@@ -128,6 +146,7 @@ Analyze the information to answer the questions related to the dashboard from th
 Explain and show the process consistently.
 
 For the cloud deployment considerations, you must use any of these 3 cloud providers: AWS, Azure or GCP and deploy the dashboard on a compute instance (use the free tier for this).
+
 Hint: First develop your dashboard locally and then update on the cloud (here you can ask for help on how to achieve this).
 
 ## STEP 4: PIPELINE DEVELOPMENT – DATA ENGINEER (EN)
@@ -151,19 +170,30 @@ You can make a model predict a relevant variable, choose one of these options:
 Define how you are going to perform the experimentation for each model, before starting. Split the dataset into training, test, and validation sets.
 You can consider among other variables.
 
--	Optimization strategy.
+-	Optimization strategy
+-	
 -	Type of regularization
+-	
 -	Batch size
--	Regularization.
+-	
+-	Regularization
+-	
 -	Number of iterations 
+-	
 -	Learning rate
+-	
 -	Architecture
 
 Finally identify under which parameters you can compare the models.
+
 The models to be made are the following:
+
 - Pose a solution using SVM (Support Vector Machine) and/or KNN
-- Pose a solution using neural networks and/or Logistic regression.
-- Pose a solution using random forest and/or XG Boost.
+- 
+- Pose a solution using neural networks and/or Logistic regression
+- 
+- Pose a solution using random forest and/or XG Boost
+- 
 - Any other model you want
 
 
