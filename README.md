@@ -81,7 +81,7 @@ Hint: Use a Geo Json technology / Parquet files to show the Geographical / Visua
 
 # Steps to follow up the solution
 
-# STEP 1: DATASET
+## STEP 1: DATASET
 
 Develop a Case study, explain and describe the data. Store the information from the given dataset on a Database (use any RDMS you are familiar with) and use Data frame (a dataset). Review the dataset, make data preparation, clean (if apply) and make an Entity Relationship Diagram.
 Use Python 3 and Python libraries and/or any RDBMS to make your ER diagram.
