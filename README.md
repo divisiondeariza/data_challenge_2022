@@ -51,30 +51,48 @@ o	reviews written by customer
 
 # Dashboard for sales management
 
-o	Design Sales Management Dashboards containing KPIs and visual data representation that answer the following questions:
-o	Where does most revenue come from? – Geographical / visual representation
-o	Which Regions/cities pay more for transportation?
-o	What is the Average Delivery Time for orders? Split on product category (English)
-o	What is the Orders Average Review Score? By Region/City and product category
-o	What is the percentage of delayed orders? Can we relate that to the score given by customers?
-o	Which categories are most sold in quantity?
-o	What is the payment method distribution on number of orders and order value?
-o	What is the product and freight value by date? – separate view
+Design Sales Management Dashboards containing KPIs and visual data representation that answer the following questions:
+
+Where does most revenue come from? – Geographical / visual representation
+
+Which Regions/cities pay more for transportation?
+
+What is the Average Delivery Time for orders? Split on product category (English)
+
+What is the Orders Average Review Score? By Region/City and product category
+
+What is the percentage of delayed orders? Can we relate that to the score given by customers?
+
+Which categories are most sold in quantity?
+
+What is the payment method distribution on number of orders and order value?
+
+What is the product and freight value by date? – separate view
 
 ## Suggested KPI: 
 •	# Total Orders, Total Sales ($)
+
 •	Top categories by price average
 •	Top cities by price average
+
 •	Order status (time taken for delivery)
+
 •	Payment type distribution
+
 •	Freight cost by item cost
+
 •	Product attributes
+
 •	Reviews written by customers (negative / positive)
+
 •	Geolocation dataset that relates Brazilian zip codes to lat/lng coordinates.
 
 Filters to be included in the dashboard:
+
 Timeframe: List of value – year / quarter / month / day
+
 Customer location/city: List of values - list of cities
+
 Hint: Use a Geo Json technology / Parquet files to show the Geographical / Visual representation
 
 ---------
