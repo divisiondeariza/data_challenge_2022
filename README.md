@@ -88,6 +88,7 @@ What is the payment method distribution on number of orders and order value?
 What is the product and freight value by date? – separate view
 
 ## Suggested KPI: 
+
 •	# Total Orders, Total Sales ($)
 
 •	Top categories by price average
@@ -106,7 +107,8 @@ What is the product and freight value by date? – separate view
 
 •	Geolocation dataset that relates Brazilian zip codes to lat/lng coordinates.
 
-Filters to be included in the dashboard:
+## Filters to be included in the dashboard:
+
 
 Timeframe: List of value – year / quarter / month / day
 
