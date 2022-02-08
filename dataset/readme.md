@@ -20,3 +20,5 @@ All text identifying stores and partners where replaced by the names of Game of 
 
 ## Data Schema
 The data is divided in multiple datasets for better understanding and organization. Please refer to the following data schema when working with it:
+
+![image](https://user-images.githubusercontent.com/17050990/153090614-7f7bf8b1-790a-4fa4-be09-107f809af2a1.png)
