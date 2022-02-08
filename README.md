@@ -171,17 +171,17 @@ Define how you are going to perform the experimentation for each model, before s
 You can consider among other variables.
 
 -	Optimization strategy
--	
+	
 -	Type of regularization
--	
--	Batch size
--	
+	
+-	Batch size	
+
 -	Regularization
--	
+	
 -	Number of iterations 
--	
+
 -	Learning rate
--	
+
 -	Architecture
 
 Finally identify under which parameters you can compare the models.
@@ -189,11 +189,11 @@ Finally identify under which parameters you can compare the models.
 The models to be made are the following:
 
 - Pose a solution using SVM (Support Vector Machine) and/or KNN
-- 
+
 - Pose a solution using neural networks and/or Logistic regression
-- 
+ 
 - Pose a solution using random forest and/or XG Boost
-- 
+ 
 - Any other model you want
 
 
@@ -222,11 +222,16 @@ https://public.tableau.com/app/profile/marien.abeli/viz/Olist_16207865690910/Sto
 
 ## Notes (Python)
 
-•	Framework could be Flask or Django the architecture should be proposed by you
-•	Follow Clean Code principles (Installing Sonar Lint in IntelliJ can help)
+•	Framework could be Flask or Django the architecture should be proposed by you.
+
+•	Follow Clean Code principles (Installing Sonar Lint in IntelliJ can help).
+
 •	Unit testing is expected with a coverage of at least 80% on service classes (Unitest, Pytest) on the code developed.
+
 •	Code Tools: Jupyter Notebooks / Anaconda, Kaggle Notebooks, Google Collab, PyCharm, Visual Studio code, Jet Brains.
+
 •	If you use microservices architecture, you will need to provide diagrams and documentation of your solution design. And use Postman to test your API calls.
+
 •	PEP8 coding standard.
 
 
