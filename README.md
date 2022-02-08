@@ -1,8 +1,8 @@
 # Data Challenge 2022: 
 ## Data Engineer - Data Scientist - Data Analyst
-# Data Challenge – New Joiners
+## Data Challenge – New Joiners
 
-# Description
+## Description
 
 Every new Data Engineer / Science / Analyst hired at Endava has the chance to go through the “Data Challenge”; where they can learn about quality standards, methodologies, and tools that they can user or apply in the future projects.
 
@@ -10,7 +10,7 @@ Our goal as a discipline is to enhance our technical knowledge, encourage our me
 
 Endava data team designed this challenge to get or increase your knowledge in some specific areas, included but not limited to databases, data modelling, date warehouse and SQL topics; Data Acquisition, Data Transformation, ETL, Data Clean, Databases Design, Data Services and Deployment techniques on the cloud.
 
-# General Requirements 
+## General Requirements 
 
 •	Follow code best practices.
 •	Follow cloud development best practices.
@@ -19,7 +19,7 @@ Endava data team designed this challenge to get or increase your knowledge in so
 •	All the code must be in a repository that judges can access.
 
 
-# Final Demo
+## Final Demo
 
 After completing your challenge, you might be invited to present it to the data – development – creative leadership team.
 
@@ -61,7 +61,7 @@ o	Which categories are most sold in quantity?
 o	What is the payment method distribution on number of orders and order value?
 o	What is the product and freight value by date? – separate view
 
-# Suggested KPI: 
+## Suggested KPI: 
 •	# Total Orders, Total Sales ($)
 •	Top categories by price average
 •	Top cities by price average
@@ -86,7 +86,7 @@ Hint: Use a Geo Json technology / Parquet files to show the Geographical / Visua
 Develop a Case study, explain and describe the data. Store the information from the given dataset on a Database (use any RDMS you are familiar with) and use Data frame (a dataset). Review the dataset, make data preparation, clean (if apply) and make an Entity Relationship Diagram.
 Use Python 3 and Python libraries and/or any RDBMS to make your ER diagram.
 
-# STEP 2: ANALYSIS
+## STEP 2: ANALYSIS
 
 Analyze the information to answer the questions related on the dashboard from the dataset, use a notebook: Google Collab, or on the cloud GCP/AWS/Azure notebook tool for the analysis and transformation Jupyter notebook / Anaconda on any cloud provider compute image: (i.e.: EC2 on AWS for example).
 
@@ -95,11 +95,11 @@ Plot the dashboard on Python visualization tools: matplotlib, seaborn
 
 Explain and show the process consistently.
 
-# STEP 3: DASHBOARD DEVELOPMENT
+## STEP 3: DASHBOARD DEVELOPMENT
 
 Analyze the information to answer the questions related to the dashboard from the dataset, you can do it in any of these 3 ways:
  
-# DATA ANALYST (EN):
+## DATA ANALYST (EN):
 
 1.	Analyze the data on Power BI and /or Tableau public (you can use DAX libraries for Power BI as well) and publish your dashboard on the cloud: (i.e.: SharePoint site with your Microsoft employee personal account or Public Tableau site) 
 
@@ -112,7 +112,7 @@ Explain and show the process consistently.
 For the cloud deployment considerations, you must use any of these 3 cloud providers: AWS, Azure or GCP and deploy the dashboard on a compute instance (use the free tier for this).
 Hint: First develop your dashboard locally and then update on the cloud (here you can ask for help on how to achieve this).
 
-# STEP 4: PIPELINE DEVELOPMENT – DATA ENGINEER (EN)
+## STEP 4: PIPELINE DEVELOPMENT – DATA ENGINEER (EN)
 
 Create a Pipeline on Python / Apache Spark and /or inside the instance on the cloud provider (GCP/AWS/Azure) to UPDATE / ADD / DELETE in real time with new data provided on the Original Dataset format.
 
@@ -120,7 +120,7 @@ Make the automation of your notebook on STEP 2 and ingest the new data automatic
 
 Create a different Mock data sample like the dataset provided to test your solution, user any automation tool or made manually, to show how to update the new dataset changes reflected on the dashboard.
 
-# STEP 5: MACHINE LEARNING – DATA SCIENCE (EN)
+## STEP 5: MACHINE LEARNING – DATA SCIENCE (EN)
 
 With the dataset analyzed from STEP 2, which variables are the most weighted features to help the Brazilian e-commerce company to expand to other regions (featured engineering or PCA (Principal Component Analysis) and show the Correlation heatmap / matrix for the features. 
 
@@ -168,11 +168,11 @@ https://public.tableau.com/app/profile/marien.abeli/viz/Olist_16207865690910/Sto
 
 # General Considerations
 
-# GIT
+## GIT
 •	Use a proper git branching strategy, you will be provided with bitbucket credentials to develop this challenge or use a personal git account.
 
 
-# Notes (Python)
+## Notes (Python)
 
 •	Framework could be Flask or Django the architecture should be proposed by you
 •	Follow Clean Code principles (Installing Sonar Lint in IntelliJ can help)
