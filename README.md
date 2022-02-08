@@ -91,6 +91,7 @@ What is the product and freight value by date? – separate view
 •	# Total Orders, Total Sales ($)
 
 •	Top categories by price average
+
 •	Top cities by price average
 
 •	Order status (time taken for delivery)
