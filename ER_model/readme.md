@@ -11,3 +11,5 @@
 
 <img width="383" alt="Data_file_list" src="https://user-images.githubusercontent.com/17050990/153091761-4c56ea4f-3374-4a78-8314-dc6b18cbe4df.png">
 
+## SQL Physical Model:
+<a href="BrazilianModel_olist.sql">BrazilianModel_olist.sql </a>
