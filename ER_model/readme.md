@@ -1,6 +1,6 @@
 ## ER Model:
 
-![ER_model](https://user-images.githubusercontent.com/17050990/153091291-6d1de13d-b87f-4fee-8215-3c983d925da0.png)
+<img width="1128" alt="ER_MODEL_Keys" src="https://user-images.githubusercontent.com/17050990/154151034-3fb683cc-2ef7-4cd1-b2de-d09835435bf3.png">
 
 ## Squema Database:
 
