@@ -216,3 +216,25 @@ def sellers(df_seller_rank, df_seller_month):
     )
 
     return fig
+
+# Reviews Pie Chart
+def reviews(negative,positive):
+    #print('negative=',negative['review_score'])
+    #print('positive=',positive['review_score'])
+    labels = ['Positive','Negative']
+    values = [positive['review_score'] , negative['review_score']]
+    print('values=',values)
+    fig = make_subplots(
+        rows=1, cols=1,
+        specs=[[{'type': 'pie'}]],
+    )
+
+    fig.add_trace(
+        go.Pie(
+            labels=labels, 
+            values=values
+        ),
+        row=1, col=1
+    )
+
+    return fig

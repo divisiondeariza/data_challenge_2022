@@ -22,8 +22,8 @@ def consolidate_dataset():
     df_seller = pd.read_csv(config.get_raw_filename(config.DATA_FILES['seller']))
     df_states = pd.read_csv(config.STATES)
 
-    # filter data to keep only 2018
-    df_order = df_order[(df_order['order_purchase_timestamp'] >= '2018-01-01') & (df_order['order_purchase_timestamp'] <= '2018-08-09')]
+    # filter data to 2016,2017 and 2018
+    df_order = df_order[(df_order['order_purchase_timestamp'] >= '2016-01-01') & (df_order['order_purchase_timestamp'] <= '2018-08-09')]
     df_order_item = df_order_item[df_order_item['order_id'].isin(df_order['order_id'].unique())]
     df_order_payment = df_order_payment[df_order_payment['order_id'].isin(df_order['order_id'].unique())]
     df_order_review = df_order_review[df_order_review['order_id'].isin(df_order['order_id'].unique())]
@@ -51,7 +51,17 @@ def consolidate_dataset():
                               suffixes=('', '_customer'))
 
     df_order = df_order.dropna(subset=['payment_type', 'product_category_name', 'seller_state', 'customer_state'])
+    df_order['review_score'] = df_order['review_score'].apply(lambda x: 1 if x > 3 else 0)
     df_order.to_csv(config.get_processed_filename(config.DATA_FILES['order']), index=False)
+
+#Final Dataframe Fields: (df_order)
+#order_id,customer_id,order_status,order_purchase_timestamp,order_approved_at,
+#order_delivered_carrier_date,order_delivered_customer_date,order_estimated_delivery_date,
+#customer_zip_code_prefix,customer_city,customer_state,payment_sequential,payment_type,
+#payment_installments,payment_value,order_item_id,product_id,seller_id,shipping_limit_date,
+#price,freight_value,review_score,product_category_name,
+#seller_zip_code_prefix,seller_city,seller_state,state_name,state_code,lat,long
+#review_score
 
 
 def filter_dataframe(df, start_date, end_date, payment_type, product_category, customer_state):
@@ -118,25 +128,27 @@ def aov(df):
 
 
 def abandonment_rate(df):
-    n_completed = df.loc[df['order_status'].isin(config.ORDER_STATUS_CONSO), 'order_id'].nunique()
-    n_order = df['order_id'].nunique()
 
-    if n_order == 0:
-        abandonment_rate = 0.
-    else:
-        abandonment_rate = 100. * (1. - n_completed / n_order)
+    #n_completed = df.loc[df['order_status'].isin(config.ORDER_STATUS_CONSO), 'order_id'].nunique()
+    #n_order = df['order_id'].nunique()
 
+    #if n_order == 0:
+        #abandonment_rate = 0.
+    #else:
+        #abandonment_rate = 100. * (1. - n_completed / n_order)
+
+    abandonment_rate=df['price'].sum().round(3)
     return abandonment_rate
 
 
 def order_satisfaction(df):
-    df = df[~df['review_score'].isna()]
-    n_statisfied = df.loc[df['review_score'] >= 4, 'order_id'].nunique()
-    n_review = df['order_id'].nunique()
+    #df = df[~df['review_score'].isna()]
+    #n_statisfied = df.loc[df['review_score'] >= 4, 'order_id'].nunique()
+    #n_review = df['order_id'].nunique()
 
-    if n_review == 0:
-        order_statisfaction = 0.
-    else:
-        order_statisfaction = 100 * n_statisfied / n_review
-
+    #if n_review == 0:
+    #    order_statisfaction = 0.
+    #else:
+    #    order_statisfaction = 100 * n_statisfied / n_review
+    order_statisfaction=df['price'].count()
     return order_statisfaction
