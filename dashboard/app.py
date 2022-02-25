@@ -18,16 +18,20 @@ server = app.server
 
 app.config.suppress_callback_exceptions = True
 
+
+#Call the first time to consolidate the dataset: generates the processed file: olist_orders_dataset.csv
+
+#data.consolidate_dataset()
+
 # load data
 df = pd.read_csv(
     config.get_processed_filename(config.DATA_FILES['order'])
 )
 df[config.COLUMN_DATE] = df[config.COLUMN_DATE].apply(pd.to_datetime)
 
-# Compute the dataframe
+# Compute the forecast only once
 dff = df[df['order_status'].isin(config.ORDER_STATUS_CONSO)]
 dff = dff.groupby(pd.Grouper(key='order_purchase_timestamp', freq='1D'))['payment_value'].sum().reset_index()
-
 
 # -------------------------------------------------------------------------------
 # layout
@@ -38,7 +42,7 @@ app.layout = html.Div([
 
     # title
     html.Div([
-        html.H1('Sales overview')
+        html.H1('Data Challenge 2022: Sales Management Dashboard KPI')
     ]),
 
     # main container
@@ -119,14 +123,14 @@ app.layout = html.Div([
                     [html.H2(id='kpi_aov_value'), html.H5('Average order value')],
                     id='kpi_aov', className='mini_container',
                 ),
-                # Abandonment rate
+                # Number Total Orders
                 html.Div(
-                    [html.H2(id='kpi_abandonment_value'), html.H5('Abandonment rate')],
+                    [html.H2(id='kpi_abandonment_value'), html.H5('Total Sales ($)')],
                     id='kpi_abandonment', className='mini_container',
                 ),
-                # Customer lifetime value
+                # Total Sales ($)
                 html.Div(
-                    [html.H2(id='kpi_order_statisfaction'), html.H5('Orders satisfaction')],
+                    [html.H2(id='kpi_order_statisfaction'), html.H5(' # Total Orders')],
                     id='kpi_order_satisfaction', className='mini_container',
                 ),
             ],
@@ -150,9 +154,17 @@ app.layout = html.Div([
                     ],
                         className='graph_container'),
 
-                    # states
+                    # Sales Map : States
                     html.Div([
+                        html.H3('Geolocation Sales Map'),
                         dcc.Graph(id='states')
+                    ],
+                        className='graph_container'),
+
+                    # Reviews
+                    html.Div([
+                        html.H3('Reviews'),
+                        dcc.Graph(id='reviews')
                     ],
                         className='graph_container'),
 
@@ -223,7 +235,7 @@ def update_kpi_abandonment(start_date, end_date, payment_type, product_category,
     dff = data.filter_dataframe(df, start_date, end_date, payment_type, product_category, customer_state=state)
     abandonment_rate = data.abandonment_rate(dff)
 
-    return f'{abandonment_rate:.2f}%'
+    return f'R$ {abandonment_rate:.2f}'
 
 
 @app.callback(
@@ -240,7 +252,7 @@ def update_kpi_order_statisfaction(start_date, end_date, payment_type, product_c
     dff = data.filter_dataframe(df, start_date, end_date, payment_type, product_category, customer_state=state)
     order_satisfaction = data.order_satisfaction(dff)
 
-    return f'{order_satisfaction:.0f}%'
+    return f'{order_satisfaction:.0f}'
 
 
 @app.callback(
@@ -367,6 +379,26 @@ def make_sellers(start_date, end_date, payment_type, product_category, state):
     }).reset_index()
 
     fig = plot.sellers(df_seller_rank, df_seller_month)
+
+    return fig
+
+
+@app.callback(
+    Output('reviews', 'figure'),
+    [
+        Input('date_slider', 'start_date'),
+        Input('date_slider', 'end_date'),
+        Input('payment_type', 'value'),
+        Input('product_category', 'value'),
+        Input('state', 'value'),
+    ],
+)
+def make_reviews(start_date, end_date, payment_type, product_category, state):
+    dff = data.filter_dataframe(df, start_date, end_date, payment_type, product_category, customer_state=state)
+    negative=dff[dff['review_score']==0].count()
+    positive=dff[dff['review_score']==1].count()
+
+    fig = plot.reviews(negative,positive)
 
     return fig
 
