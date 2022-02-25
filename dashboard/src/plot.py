@@ -104,7 +104,7 @@ def sales_timeserie(df, predictions, plot_predictions=False):
 def sales_map(df_map, df_time):
     fig = make_subplots(
         rows=1, cols=2,
-        column_widths=[0.3, 0.6],
+        column_widths=[0.5, 0.5],
         specs=[[{'type': 'scattergeo'}, {'type': 'scatter'}]],
     )
 
