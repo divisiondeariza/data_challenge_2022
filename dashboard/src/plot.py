@@ -223,7 +223,7 @@ def reviews(negative,positive):
     #print('positive=',positive['review_score'])
     labels = ['Positive','Negative']
     values = [positive['review_score'] , negative['review_score']]
-    print('values=',values)
+    #print('values=',values)
     fig = make_subplots(
         rows=1, cols=1,
         specs=[[{'type': 'pie'}]],
