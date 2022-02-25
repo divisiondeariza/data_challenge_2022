@@ -15,21 +15,21 @@ A live demo of the app can be found here
 
 Just clone this repository, navigate to the directory and execute the command, under the folder /dashboard
 
-python3 app.py
+`python3 app.py`
 
-Test on localhost:  http://127.0.0.1:8050
+Test on localhost: ` http://127.0.0.1:8050 `
 
 #Installed Packages 
 
-pip3 install dash
+`pip3 install dash
 
 pip3 install pathlib2
 
-pip3 install statsmodels
+pip3 install statsmodels`
 
 ## Requirements
 
-Python 3.7
+`Python 3.7
 
 numpy
 
@@ -39,4 +39,4 @@ dash
 
 plotly
 
-statsmodels
+statsmodels`
