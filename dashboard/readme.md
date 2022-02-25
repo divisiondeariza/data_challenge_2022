@@ -17,6 +17,8 @@ Just clone this repository, navigate to the directory and execute the command, u
 
 python3 app.py
 
+Test on local:  http://127.0.0.1:8050/ 
+
 #Installed Packages 
 
 pip3 install dash
