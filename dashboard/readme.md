@@ -13,9 +13,17 @@ A live demo of the app can be found here
 
 ## Getting Started
 
-Just clone this repository, navigate to the directory and execute the command:
+Just clone this repository, navigate to the directory and execute the command, under the folder /dashboard
 
-python app.py
+python3 app.py
+
+#Installed Packages 
+
+pip3 install dash
+
+pip3 install pathlib2
+
+pip3 install statsmodels
 
 ## Requirements
 
