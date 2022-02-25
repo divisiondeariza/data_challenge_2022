@@ -216,23 +216,56 @@ def sellers(df_seller_rank, df_seller_month):
     return fig
 
 # Reviews Pie Chart
-def reviews(negative,positive):
-    #print('negative=',negative['review_score'])
-    #print('positive=',positive['review_score'])
-    labels = ['Positive','Negative']
+def reviews(negative,positive,df_paymenttype,df_namepayment,df_namestatus,df_status):
+
+    labels = ['Positive Review','Negative Review']
     values = [positive['review_score'] , negative['review_score']]
-    #print('values=',values)
+
+    labels2 = df_namepayment
+    values2 = df_paymenttype
+
+    labels3 = df_namestatus
+    values3 = df_status
+
     fig = make_subplots(
-        rows=1, cols=1,
-        specs=[[{'type': 'pie'}]],
+        rows=1, cols=3,
+        specs=[[{'type': 'pie'}, {'type': 'bar'}, {'type': 'bar'}]],
     )
 
     fig.add_trace(
         go.Pie(
             labels=labels, 
-            values=values
+            values=values,
+            name='Reviews',
+            textposition='auto', 
         ),
         row=1, col=1
     )
+
+    fig.add_trace(
+        go.Bar(
+            x=labels2, 
+            y=values2,
+            orientation='v',
+            name='Payment Type',
+            textposition='auto',
+            base=0,
+            marker_color='salmon'
+        ),
+        row=1, col=2
+    )   
+
+    fig.add_trace(
+        go.Bar(
+            x=labels3, 
+            y=values3,
+            orientation='v',
+            name='Order Status',
+            textposition='auto',
+            base=0,
+            marker_color='green'
+        ),
+        row=1, col=3
+    )    
 
     return fig
