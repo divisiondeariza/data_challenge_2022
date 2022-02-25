@@ -5,8 +5,7 @@ from plotly.subplots import make_subplots
 
 from . import config
 
-
-# TODO moving average as principal line
+#Sales over time
 def sales_timeserie(df, predictions, plot_predictions=False):
     df_rolling_mean = df.set_index('order_purchase_timestamp')[['payment_value', 'order_id']].rolling(
         30).mean().dropna().reset_index()
@@ -99,8 +98,7 @@ def sales_timeserie(df, predictions, plot_predictions=False):
 
     return fig
 
-
-# TODO orders on the map second
+#Geolocation Sales Map
 def sales_map(df_map, df_time):
     fig = make_subplots(
         rows=1, cols=2,
