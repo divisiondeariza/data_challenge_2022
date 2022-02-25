@@ -34,4 +34,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Olist and André Sionek, “Brazilian E-Commerce Public Dataset by Olist.” Kaggle, doi: 10.34740/KAGGLE/DSV/195341.
-* [Dash Natural Gas Well Production demo](https://github.com/plotly/dash-sample-apps/tree/master/apps/dash-oil-and-gas) from which I largely took inspiration.
