@@ -1,11 +1,8 @@
 from datetime import datetime
 
 import dash
-#import dash_core_components as dcc
 from dash import dcc
-#import dash_html_components as html
 from dash import html
-#import dash_table as dt
 from dash import dash_table
 import numpy as np
 import pandas as pd
@@ -27,10 +24,10 @@ df = pd.read_csv(
 )
 df[config.COLUMN_DATE] = df[config.COLUMN_DATE].apply(pd.to_datetime)
 
-# Compute the forecast only once
+# Compute the dataframe
 dff = df[df['order_status'].isin(config.ORDER_STATUS_CONSO)]
 dff = dff.groupby(pd.Grouper(key='order_purchase_timestamp', freq='1D'))['payment_value'].sum().reset_index()
-#predictions = model.predict(dff['order_purchase_timestamp'], dff['payment_value'], look_ahead=15)
+
 
 # -------------------------------------------------------------------------------
 # layout
