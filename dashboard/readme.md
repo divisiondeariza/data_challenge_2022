@@ -21,22 +21,22 @@ Test on localhost: ` http://127.0.0.1:8050 `
 
 #Installed Packages 
 
-`pip3 install dash
+`pip3 install dash`
 
-pip3 install pathlib2
+`pip3 install pathlib2`
 
-pip3 install statsmodels`
+`pip3 install statsmodels`
 
 ## Requirements
 
-`Python 3.7
+`Python 3.7`
 
-numpy
+`numpy`
 
-pandas
+`pandas`
 
-dash
+`dash`
 
-plotly
+`plotly`
 
-statsmodels`
+`statsmodels`
