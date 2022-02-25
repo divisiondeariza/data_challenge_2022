@@ -163,7 +163,7 @@ app.layout = html.Div([
 
                     # Reviews
                     html.Div([
-                        html.H3('Reviews'),
+                        html.H3('Reviews - Payment Type - Order Status'),
                         dcc.Graph(id='reviews')
                     ],
                         className='graph_container'),
@@ -324,9 +324,10 @@ def make_product_categories(start_date, end_date, payment_type, product_category
     dff = dff.groupby('product_category_name').agg(
         total_order_value=('payment_value', 'sum'),
         mean_order_value=('payment_value', 'mean'),
+        freight_value=('freight_value', 'nunique'), 
         n_customer=('customer_id', 'nunique'),
         n_order=('order_id', 'nunique'),
-        n_seller=('seller_id', 'nunique'),
+        n_seller=('seller_id', 'nunique'), 
     ).reset_index().sort_values('total_order_value', ascending=False)
 
     dff['percentage_total'] = 100 * dff['total_order_value'] / dff['total_order_value'].sum()
@@ -335,6 +336,7 @@ def make_product_categories(start_date, end_date, payment_type, product_category
         'product_category_name': 'Product category',
         'total_order_value': 'Total order value',
         'mean_order_value': 'Mean order value',
+        'freight_value': 'Freight value',
         'n_customer': 'Number of customers',
         'n_order': 'Number of orders',
         'n_seller': 'Number of sellers'
@@ -397,8 +399,20 @@ def make_reviews(start_date, end_date, payment_type, product_category, state):
     dff = data.filter_dataframe(df, start_date, end_date, payment_type, product_category, customer_state=state)
     negative=dff[dff['review_score']==0].count()
     positive=dff[dff['review_score']==1].count()
+ 
+    df_py=dff.groupby(['payment_type']).size().reset_index(name='counts')
+    df_namepayment=df_py['payment_type'].tolist()
+    df_paymenttype=df_py['counts'].tolist()
+    #print(df_py['payment_type'].tolist())
+    #print(df_py['counts'].tolist())
 
-    fig = plot.reviews(negative,positive)
+    df_status=dff.groupby(['order_status']).size().reset_index(name='counts')
+    df_namestatus=df_status['order_status'].tolist()
+    df_status=df_status['counts'].tolist()
+    #print(df_status['order_status'].tolist()) 
+    #print(df_status['counts'].tolist()) 
+
+    fig = plot.reviews(negative,positive,df_paymenttype,df_namepayment,df_namestatus,df_status)
 
     return fig
 
