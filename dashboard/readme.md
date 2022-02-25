@@ -11,6 +11,9 @@ Details on the dataset can be found on Kaggle.
 
 A live demo of the app can be found here
 
+![demo](https://user-images.githubusercontent.com/17050990/155783765-9fb6e0de-a40d-43d0-938b-a2b19378687a.png)
+
+
 ## Getting Started
 
 Just clone this repository, navigate to the directory and execute the command, under the folder /dashboard
