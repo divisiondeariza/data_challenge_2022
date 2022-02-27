@@ -30,3 +30,16 @@ On the terminal and run these commands:
 
 This is going to create a requirements.txt file based on the libraries being used, initialize a git repository, and commit our files to it. 
 Then push this to the remote github repository.
+
+Check if see a server running prompt much like the one on the local machine. 
+
+The one step left is to allow the EC2 security group to be world accessible. 
+In the AWS sonsole, make port 8050 accessible from 0.0.0.0, which will let anyone connect to the server: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html
+
+Finally, open up a browser and launch the URL http://instance-ip:8050, and the app should be accessible from over the Internet.
+
+Server Instance URL:
+
+
+
+
