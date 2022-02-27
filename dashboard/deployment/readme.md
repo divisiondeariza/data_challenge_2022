@@ -1,9 +1,7 @@
-## Dashboard Deployment
-
-## AWS - Deploying the app to an EC2 instance
+## Dashboard Deployment - Deploying the app to an computational instance
 
 
-## Amazon EC2 Definition:
+## AWS - Amazon Web Services - Amazon EC2 Definition:
 
 Virtual servers offered as a web-service that are highly configurable, scalable, and accessible via a point-and-click management console on AWS. 
 Amazon has eliminated much of the heavy lifting traditionally required to set up the hardware, software, memory, networking, permissions, storage, security, etc. needed for dedicated computation while maintaining an abundant set of configuration options allowing to tailor a server to the specific needs.
