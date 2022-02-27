@@ -118,10 +118,15 @@ Server Instance URL:
 
 `pip3 install statsmodels` 
 
+#Check installations and modules installed:
+
+`pyhton3 --version`
+
+`pip3 list`
+
 #Clone the repository:
 
 `git clone https://github.com/marioceron/data_challenge_2022.git`
-
 
 `cd data_challenge_2022`
 
