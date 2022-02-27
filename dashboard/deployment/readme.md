@@ -24,23 +24,24 @@ Setting up and connecting to an instance:
 1. Start by signing in to AWS (https://signin.aws.amazon.com/)  using the root user credentials.
 
 2. Navigate to the EC2 Management Console (Services > Compute > EC2) and click the “Launch Instance” button. 
-aws_ec2_img1.png<img width="958" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895061-02105b21-be89-4e07-89b2-ef32dacfc5e7.png">
+
+<img width="958" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895061-02105b21-be89-4e07-89b2-ef32dacfc5e7.png">
 
 3. Then it shows a wizard that will walk through the major categories of options required to configure the instance. 
 To begin, must choose an Amazon Machine Image (AMI). This is essentially a template that describes the operating system, application server, and any additional software packages we want pre-installed on the virtual server. There are many AMI’s, some created and supported by Amazon, others by community users, and many that have been optimized for specific purpose.
 For this case, will choose: `Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type.`
 
-aws_ec2_img2.png<img width="923" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895092-1422d8cf-4393-4799-90a5-fb249cce953b.png">
+<img width="923" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895092-1422d8cf-4393-4799-90a5-fb249cce953b.png">
 
 
 4. Specify the instance type. There is a wide selection of types which vary in CPU size, memory, storage, and networking capacity and are broadly organized into four families: Storage optimized, Memory optimized, Compute optimized, or General Purpose. Choose a small, General Purpose instance type. 
-5. 
-aws_ec2_img3.png<img width="1184" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895109-4ab9deab-3448-4198-9549-1f2794250b9a.png">
+
+<img width="1184" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895109-4ab9deab-3448-4198-9549-1f2794250b9a.png">
 
 
 5. For further configuration,  the steps 3-7 accept the default configuration and click the “Review and Launch” button followed by “Launch”. 
 
-aws_ec2_img4.png<img width="1008" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895132-d32d72f9-91a4-48bc-ba84-c8c09644827d.png">
+<img width="1008" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895132-d32d72f9-91a4-48bc-ba84-c8c09644827d.png">
 
 
 
@@ -48,7 +49,7 @@ aws_ec2_img4.png<img width="1008" alt="imagen" src="https://user-images.githubus
 
 Select “Create a new key pair”, name it, download it, and then Launch the instance. 
 
-aws_ec2_img5.png<img width="708" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895138-4b0bd0e9-887e-4b7e-a5bb-731dec28a171.png">
+<img width="708" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895138-4b0bd0e9-887e-4b7e-a5bb-731dec28a171.png">
 
 
 Connect to the new launched instance using SSH and the key pair already just downloaded by following steps outlined here:
