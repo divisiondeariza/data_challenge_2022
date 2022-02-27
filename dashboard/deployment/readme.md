@@ -75,7 +75,7 @@ On the terminal and run these commands:
 
 `git init`
 
-`git add -a`
+`git add .`
 
 `git commit -m "Added app.py, assets folder: css file, data folder: dataset raw files and src folder: config.py, data.py and plot.py files (source files)"`
 
