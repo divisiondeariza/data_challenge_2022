@@ -11,6 +11,9 @@ Get the app.py file on the instance and run it with `python3 app.py`. This runs 
 
 After create a git repository locally and on Github where the code will be hosted: https://github.com/marioceron/data_challenge_2022.git
 Then need to get the requirements.txt file ready to install all the required libraries on the server. 
+
+First on local machine clone the Github repository:  https://github.com/marioceron/data_challenge_2022.git
+
 On the terminal and run these commands:
 
 `pip freeze > requirements.txt`
