@@ -77,7 +77,7 @@ On the terminal and run these commands:
 
 `git add -a`
 
-`git commit -m "Added app.py file"`
+`git commit -m "Added app.py, assets folder: css file, data folder: dataset raw files and src folder: config.py, data.py and plot.py files (source files)"`
 
 `git remote add origin https://github.com/marioceron/data_challenge_2022.git`
 
