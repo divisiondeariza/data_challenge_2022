@@ -39,7 +39,7 @@ For this case, will choose: `Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type.`
 <img width="1184" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895109-4ab9deab-3448-4198-9549-1f2794250b9a.png">
 
 
-5. For further configuration,  the steps 3-7 accept the default configuration and click the “Review and Launch” button followed by “Launch”. 
+5. For further configuration,  the next steps accept the default configuration and click the “Review and Launch” button followed by “Launch”. 
 
 <img width="1008" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895132-d32d72f9-91a4-48bc-ba84-c8c09644827d.png">
 
