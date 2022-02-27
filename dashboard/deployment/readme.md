@@ -47,8 +47,6 @@ Server Instance URL:
 
 `sudo apt install git python3`
 
-`sudo apt-get install postgresql libpq-dev postgresql-client postgresql-client-common`
-
 `sudo apt-get update`
 
 `sudo apt-get install python3-pip`
