@@ -23,7 +23,7 @@ On the terminal and run these commands:
 
 `git remote add origin https://github.com/marioceron/data_challenge_2022/`
 
-git push origin master --set-upstream`
+`git push origin master --set-upstream`
 
 This is going to create a requirements.txt file based on the libraries being used, initialize a git repository, and commit our files to it. 
 Then push this to the remote github repository.
