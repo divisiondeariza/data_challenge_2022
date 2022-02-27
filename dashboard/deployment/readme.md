@@ -9,9 +9,9 @@ Amazon has eliminated much of the heavy lifting traditionally required to set up
 
 ## Use the EC2 
 
-For computationally expensive tasks that your personal machine cannot handle.
+For computationally expensive tasks that a personal machine cannot handle.
 
-For time consuming tasks you want to run in parallel without sacrificing performance on your personal machine.
+For time consuming tasks that need to run in parallel without sacrificing performance on the personal machine.
 
 For repetitive tasks that need to run automatically -- based on time, constraints, or external signals from other web-services or systems.
 
