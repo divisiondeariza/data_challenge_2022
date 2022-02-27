@@ -36,7 +36,7 @@ Check if see a server running prompt much like the one on the local machine.
 The one step left is to allow the EC2 security group to be world accessible. 
 In the AWS sonsole, make port 8050 accessible from 0.0.0.0, which will let anyone connect to the server: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html
 
-Finally, open up a browser and launch the URL http://instance-ip:8050, and the app should be accessible from over the Internet.
+Finally, open up a browser and launch the URL `http://instance-ip:8050` and the app should be accessible from over the Internet.
 
 Server Instance URL:
 
