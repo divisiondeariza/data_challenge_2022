@@ -74,7 +74,7 @@ Server Instance URL:
 
 `cd data_challenge_2022`
 
-#Set up requirements
+#Set up requirements:
 
 `pip3 install -r requirements.txt`
 
@@ -84,7 +84,7 @@ Server Instance URL:
 
 #Execute the app as a background process:
 
-nohup python3 app.py &`
+`nohup python3 app.py &`
 
-#this generate a file called: nohub.out with the log of execution.
+#this generate a file called: `nohub.out` with the log of execution.
 
