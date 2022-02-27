@@ -57,15 +57,15 @@ Server Instance URL:
 
 `pip3 install pandas`
 
-`pip3 install psycopg2`
+`pip3 install numpy`
 
 `pip3 install sqlalchemy`
 
-`pip3 install dash==1.1.1`
+`pip3 install dash`
 
-`pip3 install dash-daq==0.1.0`
+`pip3 install pathlib2`
 
-`pip3 install plotly` 
+`pip3 install statsmodels` 
 
 #Clone the repository:
 
