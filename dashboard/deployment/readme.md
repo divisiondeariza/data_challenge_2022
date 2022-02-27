@@ -59,8 +59,6 @@ Server Instance URL:
 
 `pip3 install numpy`
 
-`pip3 install sqlalchemy`
-
 `pip3 install dash`
 
 `pip3 install pathlib2`
