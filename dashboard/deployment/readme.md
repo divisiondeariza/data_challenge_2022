@@ -14,10 +14,15 @@ Then need to get the requirements.txt file ready to install all the required lib
 On the terminal and run these commands:
 
 `pip freeze > requirements.txt`
+
 `git init`
+
 `git add -a`
+
 `git commit -m "Added app.py file"`
+
 `git remote add origin https://github.com/marioceron/data_challenge_2022/`
+
 git push origin master --set-upstream`
 
 This is going to create a requirements.txt file based on the libraries being used, initialize a git repository, and commit our files to it. 
