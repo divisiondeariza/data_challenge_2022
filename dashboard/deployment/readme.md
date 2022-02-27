@@ -138,7 +138,9 @@ Server Instance URL:
 
 `cd dashboard`
 
-`pwd # The folder where is located the app is: /home/ubuntu/data_challenge_2022/dashboard/`
+`pwd` 
+
+#The folder where is located the app is: /home/ubuntu/data_challenge_2022/dashboard/
 
 #Execute the app as a background process:
 
