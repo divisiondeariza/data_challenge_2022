@@ -3,13 +3,13 @@
 ## AWS - Deploying the app to an EC2 instance
 
 
-## What is Amazon EC2?
+## Amazon EC2 Definition:
 
 Virtual servers offered as a web-service that are highly configurable, scalable, and accessible via a point-and-click management console on AWS. 
 Amazon has eliminated much of the heavy lifting traditionally required to set up the hardware, software, memory, networking, permissions, storage, security, etc. needed for dedicated computation while maintaining an abundant set of configuration options allowing to tailor a server to the specific needs.
 
 
-## When to use EC2 ?
+## Use the EC2 
 
 For computationally expensive tasks that your personal machine cannot handle.
 
@@ -19,7 +19,7 @@ For repetitive tasks that need to run automatically -- based on time, constraint
 
 
 
-## Configuration options:
+## Configuration options (step by step):
 
 Setting up and connecting to an instance:
 
