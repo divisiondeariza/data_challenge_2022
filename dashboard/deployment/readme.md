@@ -27,7 +27,7 @@ Setting up and connecting to an instance:
 
 3. Then it shows a wizard that will walk through the major categories of options required to configure the instance. 
 
-4. To begin, must choose an Amazon Machine Image (AMI). This is essentially a template that describes the operating system, application server, and any additional software packages we want pre-installed on the virtual server. There are many AMI’s, some created and supported by Amazon, others by community users, and many that have been optimized for specific purpose. For this case, will choose Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type
+4. To begin, must choose an Amazon Machine Image (AMI). This is essentially a template that describes the operating system, application server, and any additional software packages we want pre-installed on the virtual server. There are many AMI’s, some created and supported by Amazon, others by community users, and many that have been optimized for specific purpose. For this case, will choose: `Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type.
 
 5. Specify the instance type. There is a wide selection of types which vary in CPU size, memory, storage, and networking capacity and are broadly organized into four families: Storage optimized, Memory optimized, Compute optimized, or General Purpose. Choose a small, General Purpose instance type. 
 
