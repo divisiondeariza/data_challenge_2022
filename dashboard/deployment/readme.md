@@ -80,11 +80,11 @@ Server Instance URL:
 
 #check the path:
 
-pwd # The folder where is located the app is: /home/ubuntu/data_challenge_2022/
+`pwd # The folder where is located the app is: /home/ubuntu/data_challenge_2022/`
 
 #Execute the app as a background process:
 
-nohup python3 app.py &
+nohup python3 app.py &`
 
 #this generate a file called: nohub.out with the log of execution.
 
