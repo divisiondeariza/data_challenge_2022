@@ -41,5 +41,50 @@ Finally, open up a browser and launch the URL http://instance-ip:8050, and the a
 Server Instance URL:
 
 
+#On EC2 instance (Linux Ubuntu 18.04.3) installations maded:
 
+#Install packages:
+
+`sudo apt install git python3`
+
+`sudo apt-get install postgresql libpq-dev postgresql-client postgresql-client-common`
+
+`sudo apt-get update`
+
+`sudo apt-get install python3-pip`
+
+#Install python libraries:
+
+`pip3 install pandas`
+
+`pip3 install psycopg2`
+
+`pip3 install sqlalchemy`
+
+`pip3 install dash==1.1.1`
+
+`pip3 install dash-daq==0.1.0`
+
+`pip3 install plotly` 
+
+#Clone the repository:
+
+`git clone https://github.com/marioceron/data_challenge_2022.git`
+
+
+`cd data_challenge_2022`
+
+#Set up requirements
+
+`pip3 install -r requirements.txt`
+
+#check the path:
+
+pwd # The folder where is located the app is: /home/ubuntu/data_challenge_2022/
+
+#Execute the app as a background process:
+
+nohup python3 app.py &
+
+#this generate a file called: nohub.out with the log of execution.
 
