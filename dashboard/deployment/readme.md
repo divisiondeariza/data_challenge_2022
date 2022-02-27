@@ -23,6 +23,8 @@ Setting up and connecting to an instance:
 
 1. Start by signing in to AWS (https://signin.aws.amazon.com/)  using the root user credentials.
 
+Note: Must need a setup an AWS account: user information, email and need a valid credit card.
+
 2. Navigate to the EC2 Management Console (Services > Compute > EC2) and click the “Launch Instance” button. 
 
 <img width="958" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895061-02105b21-be89-4e07-89b2-ef32dacfc5e7.png">
