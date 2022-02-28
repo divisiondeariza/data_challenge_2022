@@ -35,6 +35,8 @@ For this case, will choose: `Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type.`
 
 <img width="923" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895092-1422d8cf-4393-4799-90a5-fb249cce953b.png">
 
+<img width="1401" alt="aws_AMI_instance" src="https://user-images.githubusercontent.com/17050990/156034381-91586287-1e7b-4ebe-99b3-1f564bed0aa6.png">
+
 
 4. Specify the instance type. There is a wide selection of types which vary in CPU size, memory, storage, and networking capacity and are broadly organized into four families: Storage optimized, Memory optimized, Compute optimized, or General Purpose. Choose a small, General Purpose instance type. 
 
@@ -92,6 +94,9 @@ Check if see a server running prompt much like the one on the local machine.
 
 The one step left is to allow the EC2 security group to be world accessible. 
 In the AWS sonsole, make port 8050 accessible from 0.0.0.0, which will let anyone connect to the server: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html
+
+<img width="1154" alt="aws_security_group_port_8050" src="https://user-images.githubusercontent.com/17050990/156034287-6aa8e587-da3c-49a5-83e5-e4573d98d97d.png">
+
 
 Finally, open up a browser and launch the URL `http://instance-ip:8050` and the app should be accessible from over the Internet.
 
