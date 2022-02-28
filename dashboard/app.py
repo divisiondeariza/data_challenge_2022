@@ -7,7 +7,7 @@ from dash import dash_table
 import numpy as np
 import pandas as pd
 from dash.dependencies import Input, Output
-from src import config, data, plot, model
+from src import config, data, plot
 
 # Create app
 app = dash.Dash(
