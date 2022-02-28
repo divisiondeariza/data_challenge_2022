@@ -129,29 +129,53 @@ Server Instance URL:
 `pip3 list`
 
 `Package              Version`
+
 `-------------------- -----------`
+
 `dash                 2.2.0`
+
 `dash-core-components 2.0.0`
+
 `dash-html-components 2.0.0`
+
 `dash-table           5.0.0`
+
 `docutils             0.14`
+
 `Flask                2.0.3`
+
 `Flask-Compress       1.10.1`
+
 `numpy                1.21.5`
+
 `packaging            21.3`
+
 `pandas               1.3.5`
+
 `pathlib2             2.3.7.1`
+
 `pip                  20.2.2`
+
 `plotly               5.6.0`
+
 `pyparsing            3.0.7`
+
 `pystache             0.5.4`
+
 `python-daemon        2.2.3`
+
 `python-dateutil      2.8.2`
+
 `pytz                 2021.3`
+
 `scipy                1.7.3`
+
 `setuptools           49.1.3`
+
 `simplejson           3.2.0`
+
 `statsmodels          0.13.2`
+
 
 #Clone the repository:
 
