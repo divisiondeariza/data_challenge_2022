@@ -242,3 +242,6 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 #this generate a file called: `nohub.out` with the log of execution.
 
+
+#Do not forget to shutdown the instance after presented over time, this will generate undesirable costs.
+
