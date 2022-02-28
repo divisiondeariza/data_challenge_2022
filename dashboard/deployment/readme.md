@@ -45,7 +45,7 @@ For this case, will choose: `Amazon Linux 2 AMI (HVM) Kernel 4.14 , SSD Volume T
 
 <img width="1008" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895132-d32d72f9-91a4-48bc-ba84-c8c09644827d.png">
 
-After the launch, then go to the Instances list, and wait until the instance is provisioned (on green):
+After the launch, then go to the Instances list, and wait until the instance is running and provisioned (running and status check on green):
 
 <img width="1178" alt="aws_instances_list" src="https://user-images.githubusercontent.com/17050990/156036434-142d3146-9018-4dc3-ba68-8d142ffb0a3d.png">
 
