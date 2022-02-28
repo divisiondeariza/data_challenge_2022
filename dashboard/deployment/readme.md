@@ -115,10 +115,9 @@ Server Instance URL:
 
 http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
+#Install packages:
 
 #On EC2 instance (Linux Ubuntu 18.04.3) run this installations commands:
-
-#Install packages:
 
 `sudo apt install git python3`
 
@@ -204,6 +203,7 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 `statsmodels          0.13.2`
 
+`----- -------`
 
 #Clone the repository:
 
