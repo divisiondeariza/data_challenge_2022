@@ -115,7 +115,7 @@ Server Instance URL:
 
 http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
-#Install packages:
+# Install Base Packages:
 
 #On EC2 instance (Linux Ubuntu 18.04.3) run this installations commands:
 
@@ -135,7 +135,7 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 
 
-#Install python libraries:
+# Install python libraries:
 
 `pip3 install pandas`
 
@@ -205,7 +205,7 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 `----- -------`
 
-#Clone the repository:
+# Clone the repository:
 
 `git clone https://github.com/marioceron/data_challenge_2022.git`
 
@@ -236,7 +236,7 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 `/home/ubuntu/data_challenge_2022/dashboard/  or /home/ec2-user/data_challenge_2022/dashboard/`
 
-#Execute the app as a background process:
+# Execute the app as a background process:
 
 `nohup python3 app.py &`
 
