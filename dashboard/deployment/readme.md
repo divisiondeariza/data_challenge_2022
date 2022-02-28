@@ -63,6 +63,7 @@ Now going to deploy the code to an EC2 instance and make sure it's in the same V
 After downloaded the key file: `my-key.pem`, then on the command line change the permissions and execute for SSH access:
 
 `chmod 400 my-key.pem`
+
 `ssh -i "my-key.pem" ec2-user@ec2-xx-xx-xx-xx.compute-1.amazonaws.com`
 
 <img width="984" alt="aws_ec2_connected" src="https://user-images.githubusercontent.com/17050990/156034639-c7dcc21b-67fc-4d01-8a44-b071528e5ef2.png">
