@@ -82,14 +82,6 @@ Then need to get the requirements.txt file ready to install all the required lib
 
 First on local machine clone the Github repository:  https://github.com/marioceron/data_challenge_2022.git
 
-Note: If need more files or heavier files like dataset can use this command:
-
-#Copy files from local:
-
-`scp -i /path/my-key.pem /path/to/file ec2-user@ec2-xx-xx-xx-xx.compute-1.amazonaws.com:~/path/to/location`
-
-
-
 On the terminal and run these commands:
 
 `pip freeze > requirements.txt`
@@ -216,6 +208,13 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 #Unzip the data processed:
 
 `unzip /home/ubuntu/data_challenge_2022/dashboard/data/processed/olist_orders_dataset.csv.zip`
+
+#Note: If need more files or heavier files like dataset can use this command:
+
+#Optional: Copy files from local:
+
+`scp -i /path/my-key.pem /path/to/file ec2-user@ec2-xx-xx-xx-xx.compute-1.amazonaws.com:~/path/to/location`
+
 
 #check the path:
 
