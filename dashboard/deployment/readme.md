@@ -111,9 +111,9 @@ When go to option "Security Groups" above "NETWORK & SECURITY" in navigation men
 
 Finally, open up a browser and launch the URL `http://instance-ip:8050` and the app should be accessible from over the Internet.
 
-Server Instance URL:
+Server Instance: <a href="http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/" target="_blank"> URL </a>
 
-http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
+`http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/`
 
 # Install Base Packages:
 
