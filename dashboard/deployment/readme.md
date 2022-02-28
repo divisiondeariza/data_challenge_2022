@@ -31,7 +31,7 @@ Note: Must need a setup an AWS account: user information, email and need a valid
 
 3. Then it shows a wizard that will walk through the major categories of options required to configure the instance. 
 To begin, must choose an Amazon Machine Image (AMI). This is essentially a template that describes the operating system, application server, and any additional software packages we want pre-installed on the virtual server. There are many AMI’s, some created and supported by Amazon, others by community users, and many that have been optimized for specific purpose.
-For this case, will choose: `Amazon Linux  2 AMI (HVM), SSD Volume Type.`
+For this case, will choose: `Amazon Linux  2 AMI Kernel 4.14 (HVM), SSD Volume Type.`
 
 <img width="1401" alt="aws_AMI_instance" src="https://user-images.githubusercontent.com/17050990/156034381-91586287-1e7b-4ebe-99b3-1f564bed0aa6.png">
 
@@ -60,7 +60,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
 To run this app on an EC2 instance which is going to be available and reachable over the Internet.
 Now going to deploy the code to an EC2 instance and make sure it's in the same VPC.
 
-After downloaded the key file: `my-key.pem`, then on the command line change the permissions and execute for SSH access:
+After downloaded the key file: `my-key.pem`, then on the command line change the permissions for the key file and execute for SSH access:
 
 `chmod 400 my-key.pem`
 
