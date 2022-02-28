@@ -188,6 +188,7 @@ Server Instance URL:
 `pip3 install -r requirements.txt`
 
 #Unzip the data processed:
+
 `unzip /home/ubuntu/data_challenge_2022/dashboard/data/processed/olist_orders_dataset.csv.zip`
 
 #check the path:
