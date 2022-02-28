@@ -31,9 +31,7 @@ Note: Must need a setup an AWS account: user information, email and need a valid
 
 3. Then it shows a wizard that will walk through the major categories of options required to configure the instance. 
 To begin, must choose an Amazon Machine Image (AMI). This is essentially a template that describes the operating system, application server, and any additional software packages we want pre-installed on the virtual server. There are many AMI’s, some created and supported by Amazon, others by community users, and many that have been optimized for specific purpose.
-For this case, will choose: `Amazon Linux AMI 2018.03.0 (HVM), SSD Volume Type.`
-
-<img width="923" alt="imagen" src="https://user-images.githubusercontent.com/17050990/155895092-1422d8cf-4393-4799-90a5-fb249cce953b.png">
+For this case, will choose: `Amazon Linux  2 AMI (HVM), SSD Volume Type.`
 
 <img width="1401" alt="aws_AMI_instance" src="https://user-images.githubusercontent.com/17050990/156034381-91586287-1e7b-4ebe-99b3-1f564bed0aa6.png">
 
@@ -59,10 +57,11 @@ Select “Create a new key pair”, name it, download it, and then Launch the in
 Connect to the new launched instance using SSH and the key pair already just downloaded by following steps outlined here:
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
 
-
-
 To run this app on an EC2 instance which is going to be available and reachable over the Internet.
 Now going to deploy the code to an EC2 instance and make sure it's in the same VPC.
+
+<img width="984" alt="aws_ec2_connected" src="https://user-images.githubusercontent.com/17050990/156034639-c7dcc21b-67fc-4d01-8a44-b071528e5ef2.png">
+
 
 ## Getting app files ready
 
@@ -72,6 +71,14 @@ After create a git repository locally and on Github where the code will be hoste
 Then need to get the requirements.txt file ready to install all the required libraries on the server. 
 
 First on local machine clone the Github repository:  https://github.com/marioceron/data_challenge_2022.git
+
+Note: If need more files or heavier files like dataset can use this command:
+
+#Copy files from local:
+
+scp -i /path/my-key.pem /path/to/file ec2-user@ec2-52-73-95-211.compute-1.amazonaws.com:~/path/to/location
+
+
 
 On the terminal and run these commands:
 
