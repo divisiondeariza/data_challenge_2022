@@ -115,6 +115,8 @@ Finally, open up a browser and launch the URL `http://instance-ip:8050` and the 
 
 Server Instance URL:
 
+http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
+
 
 #On EC2 instance (Linux Ubuntu 18.04.3) installations maded:
 
