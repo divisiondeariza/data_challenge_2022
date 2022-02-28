@@ -66,7 +66,7 @@ After downloaded the key file: `my-key.pem`, then on the command line change the
 
 `ssh -i "my-key.pem" ec2-user@ec2-xx-xx-xx-xx.compute-1.amazonaws.com`
 
-<img width="984" alt="aws_ec2_connected" src="https://user-images.githubusercontent.com/17050990/156034639-c7dcc21b-67fc-4d01-8a44-b071528e5ef2.png">
+<img width="984" alt="aws_ec2_connected" src="https://user-images.githubusercontent.com/17050990/156036108-993a14ec-2047-475f-ba8c-5e8d3001a5b0.png">
 
 
 ## Getting app files ready
