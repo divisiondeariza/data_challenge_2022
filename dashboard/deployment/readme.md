@@ -116,7 +116,7 @@ Server Instance URL:
 http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 
-#On EC2 instance (Linux Ubuntu 18.04.3) installations maded:
+#On EC2 instance (Linux Ubuntu 18.04.3) run this installations commands:
 
 #Install packages:
 
@@ -125,6 +125,16 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 `sudo apt-get update`
 
 `sudo apt-get install python3-pip`
+
+#If your instance is different (CentOS for example) the installations commands are:
+
+`sudo yum update`
+
+`sudo yum install git-all`
+
+`sudo yum install python3-pip`
+
+
 
 #Install python libraries:
 
@@ -146,7 +156,7 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 `pip3 list`
 
-`Package              Version`
+`Package     --         Version`
 
 `-------------------- -----------`
 
