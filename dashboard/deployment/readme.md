@@ -108,7 +108,7 @@ Check if see a server running prompt much like the one on the local machine.
 The one step left is to allow the EC2 security group to be world accessible. 
 In the AWS sonsole, make port 8050 accessible from 0.0.0.0, which will let anyone connect to the server: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html
 
-When go to option "Security Groups" above "NETWORK & SECURITY" in navigation menu on left. It will show up the security group you saw before. Click on it, it will show a split screen where the one is above has 2 tabs: Details and Inbound. Go to Inbound, in port range input 8050.
+When go to option "Security Groups" above "NETWORK & SECURITY" in navigation menu on left. It will show up the security group as before. Click on it, it will show a split screen where the one is above has 2 tabs: Details and Inbound. Go to Inbound, in port range input 8050.
 
 <img width="1154" alt="aws_security_group_port_8050" src="https://user-images.githubusercontent.com/17050990/156034287-6aa8e587-da3c-49a5-83e5-e4573d98d97d.png">
 
