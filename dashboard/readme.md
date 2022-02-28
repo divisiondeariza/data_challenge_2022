@@ -9,7 +9,7 @@ Details on the dataset can be found on Kaggle.
 
 ## Demo
 
-A live demo of the app can be found here
+A live demo of the app can be found  <a href="http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/" target="_blank"> here </a>
 
 ![demo](https://user-images.githubusercontent.com/17050990/155783765-9fb6e0de-a40d-43d0-938b-a2b19378687a.png)
 
