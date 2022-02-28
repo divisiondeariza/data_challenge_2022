@@ -217,7 +217,7 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 #Unzip the data processed:
 
-`unzip /home/ubuntu/data_challenge_2022/dashboard/data/processed/olist_orders_dataset.csv.zip`
+`unzip data_challenge_2022/dashboard/data/processed/olist_orders_dataset.csv.zip`
 
 #Note: If need more files or heavier files like dataset can use this command:
 
@@ -234,7 +234,7 @@ http://ec2-52-73-95-211.compute-1.amazonaws.com:8050/
 
 #The folder where is located the app is:
 
-`/home/ubuntu/data_challenge_2022/dashboard/`
+`/home/ubuntu/data_challenge_2022/dashboard/  or /home/ec2-user/data_challenge_2022/dashboard/`
 
 #Execute the app as a background process:
 
